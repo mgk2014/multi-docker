@@ -8,7 +8,7 @@ before_install:
 scripts: 
   #  - docker run dockintocloud/react-test npm test -- --coverage
   # changed due to JEST library changes
-  docker run -e CI=true USERNAME/react-test npm test
+  docker run -e CI=true dockintocloud/react-test npm test
 
 after_success:
   - docker build -t dockintocloud/multi-client ./client
