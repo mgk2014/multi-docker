@@ -12,7 +12,7 @@ scripts:
 
 after_success:
   - docker build -t dockintocloud/multi-client ./client
-  - docker build -t dockintocloud/multi-nginx ./  nginx
+  - docker build -t dockintocloud/multi-nginx ./nginx
   - docker build -t dockintocloud/multi-server ./server
   - docker build -t dockintocloud/multi-worker ./worker
 
